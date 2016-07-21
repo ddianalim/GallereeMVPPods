@@ -139,15 +139,16 @@
                                                         <constraint firstAttribute="height" constant="5" id="ZB1-ZM-3MR"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4At-Nb-6Aw">
-                                                    <rect key="frame" x="473" y="292" width="46" height="30"/>
-                                                    <state key="normal" title="&gt;"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4At-Nb-6Aw">
+                                                    <rect key="frame" x="472" y="279" width="45" height="51"/>
+                                                    <state key="normal" title="&gt;" image="arrowicon"/>
                                                     <connections>
                                                         <segue destination="HRz-kh-4TL" kind="show" id="egH-Y0-0kd"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="4At-Nb-6Aw" firstAttribute="top" secondItem="pZJ-ge-wsC" secondAttribute="bottom" constant="10" id="3b4-Tu-qDW"/>
                                                 <constraint firstItem="yY4-X8-J7M" firstAttribute="top" secondItem="pZJ-ge-wsC" secondAttribute="bottom" constant="15" id="67b-wi-pFu"/>
                                                 <constraint firstItem="pZJ-ge-wsC" firstAttribute="top" secondItem="Sl1-3T-KxU" secondAttribute="topMargin" constant="-8" id="TtZ-pY-9fc"/>
                                                 <constraint firstItem="xX8-h6-Xnd" firstAttribute="top" secondItem="yY4-X8-J7M" secondAttribute="bottom" constant="5" id="cOJ-tT-Wec"/>
@@ -159,6 +160,7 @@
                                                 <constraint firstItem="MzR-UE-Qmm" firstAttribute="leading" secondItem="Sl1-3T-KxU" secondAttribute="leadingMargin" constant="-10" id="smd-mg-yGS"/>
                                                 <constraint firstItem="yY4-X8-J7M" firstAttribute="leading" secondItem="Sl1-3T-KxU" secondAttribute="leadingMargin" constant="20" id="wvV-8A-w05"/>
                                                 <constraint firstItem="xX8-h6-Xnd" firstAttribute="leading" secondItem="Sl1-3T-KxU" secondAttribute="leadingMargin" constant="20" id="xBf-3m-k4m"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4At-Nb-6Aw" secondAttribute="trailing" constant="20" id="z9I-iP-K5s"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="xX8-h6-Xnd" secondAttribute="bottom" constant="2.5" id="znL-t5-dEZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -438,13 +440,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addpicbutton" translatesAutoresizingMaskIntoConstraints="NO" id="2Do-Gz-hxc">
-                                <rect key="frame" x="163" y="84" width="274" height="274"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="6vI-aN-tIj"/>
-                                    <constraint firstAttribute="height" constant="274" id="a2n-Dx-LSF"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZnY-p2-cBQ">
                                 <rect key="frame" x="20" y="378" width="560" height="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -468,20 +463,28 @@
                                     <navigationItem title="Profile" id="wf7-xu-N2L"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ2-Vb-xET">
+                                <rect key="frame" x="163" y="84" width="274" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="9f6-hZ-IS9"/>
+                                    <constraint firstAttribute="width" constant="274" id="D7J-XT-oMq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="addpicbutton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZnY-p2-cBQ" firstAttribute="top" secondItem="uJ2-Vb-xET" secondAttribute="bottom" constant="20" id="2sm-NH-4Fc"/>
                             <constraint firstItem="ZnY-p2-cBQ" firstAttribute="trailing" secondItem="QXn-OG-eHH" secondAttribute="trailingMargin" id="99T-95-0MD"/>
                             <constraint firstItem="Rla-1F-gyp" firstAttribute="top" secondItem="ZnY-p2-cBQ" secondAttribute="bottom" constant="10" id="DW8-v4-gZb"/>
-                            <constraint firstItem="ZnY-p2-cBQ" firstAttribute="top" secondItem="2Do-Gz-hxc" secondAttribute="bottom" constant="20" id="GD0-MR-oUO"/>
+                            <constraint firstItem="uJ2-Vb-xET" firstAttribute="centerX" secondItem="QXn-OG-eHH" secondAttribute="centerX" id="MBB-7g-LkK"/>
                             <constraint firstItem="ETX-bn-nnI" firstAttribute="top" secondItem="Rla-1F-gyp" secondAttribute="bottom" constant="10" id="MTk-SC-Cth"/>
-                            <constraint firstItem="2Do-Gz-hxc" firstAttribute="centerX" secondItem="QXn-OG-eHH" secondAttribute="centerX" id="S5d-Np-CAa"/>
                             <constraint firstItem="Rla-1F-gyp" firstAttribute="leading" secondItem="QXn-OG-eHH" secondAttribute="leadingMargin" id="W77-3Q-eh3"/>
                             <constraint firstItem="ZnY-p2-cBQ" firstAttribute="leading" secondItem="QXn-OG-eHH" secondAttribute="leadingMargin" id="aGR-ar-obr"/>
+                            <constraint firstItem="uJ2-Vb-xET" firstAttribute="top" secondItem="t0y-Eq-2Vd" secondAttribute="bottom" constant="20" id="evY-k0-I9D"/>
                             <constraint firstAttribute="trailing" secondItem="t0y-Eq-2Vd" secondAttribute="trailing" id="g4g-tN-DPq"/>
                             <constraint firstItem="Rla-1F-gyp" firstAttribute="trailing" secondItem="QXn-OG-eHH" secondAttribute="trailingMargin" id="hVJ-7D-sSM"/>
                             <constraint firstItem="t0y-Eq-2Vd" firstAttribute="top" secondItem="i38-T9-4IQ" secondAttribute="bottom" id="kBV-jP-OVL"/>
-                            <constraint firstItem="2Do-Gz-hxc" firstAttribute="top" secondItem="t0y-Eq-2Vd" secondAttribute="bottom" constant="20" id="sUp-JA-eba"/>
                             <constraint firstItem="t0y-Eq-2Vd" firstAttribute="leading" secondItem="QXn-OG-eHH" secondAttribute="leading" id="vSQ-Lj-M7U"/>
                         </constraints>
                     </view>
@@ -515,6 +518,7 @@
     </scenes>
     <resources>
         <image name="addpicbutton" width="1024" height="1024"/>
+        <image name="arrowicon" width="33" height="51"/>
         <image name="timelineline" width="512" height="1612"/>
     </resources>
     <inferredMetricsTieBreakers>
