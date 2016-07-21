@@ -253,6 +253,7 @@
 				TargetAttributes = {
 					31656E8B1D35715B00D03986 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9MD5TLEWD4;
 					};
 					31656E9F1D35715B00D03986 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -589,10 +590,13 @@
 			baseConfigurationReference = F65693EE48E225D1A9BA9CBC /* Pods-Galleree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Galleree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alitdiamond.Galleree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -601,10 +605,13 @@
 			baseConfigurationReference = C49AF6B565B3AAB975E8E707 /* Pods-Galleree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Galleree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alitdiamond.Galleree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

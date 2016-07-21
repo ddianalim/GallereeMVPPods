@@ -100,13 +100,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="timelineline" translatesAutoresizingMaskIntoConstraints="NO" id="rrJ-z9-5DF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timelineline" translatesAutoresizingMaskIntoConstraints="NO" id="rrJ-z9-5DF">
                                 <rect key="frame" x="45" y="64" width="5" height="1612"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="5" id="Xon-Qt-QZX"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="339" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gpn-48-WHc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="248" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="339" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gpn-48-WHc">
                                 <rect key="frame" x="55" y="64" width="545" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -178,6 +178,7 @@
                             <constraint firstItem="gpn-48-WHc" firstAttribute="leading" secondItem="LY1-CU-80K" secondAttribute="leadingMargin" constant="35" id="I46-hH-DWA"/>
                             <constraint firstItem="gpM-oM-t2K" firstAttribute="top" secondItem="bZ2-PR-smg" secondAttribute="bottom" id="M9U-I4-khn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gpn-48-WHc" secondAttribute="trailing" constant="-20" id="UtY-ae-Ggg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rrJ-z9-5DF" secondAttribute="bottom" id="Xze-b2-rAE"/>
                             <constraint firstItem="rrJ-z9-5DF" firstAttribute="top" secondItem="gpM-oM-t2K" secondAttribute="bottom" id="YER-Sx-jGn"/>
                             <constraint firstItem="gpn-48-WHc" firstAttribute="top" secondItem="gpM-oM-t2K" secondAttribute="bottom" id="oFs-dq-OAr"/>
                             <constraint firstItem="rrJ-z9-5DF" firstAttribute="leading" secondItem="LY1-CU-80K" secondAttribute="leadingMargin" constant="25" id="pY7-Si-OLo"/>
@@ -185,6 +186,11 @@
                             <constraint firstAttribute="trailing" secondItem="gpM-oM-t2K" secondAttribute="trailing" id="skq-9H-iDl"/>
                             <constraint firstItem="gpM-oM-t2K" firstAttribute="leading" secondItem="LY1-CU-80K" secondAttribute="leading" id="vGh-Kt-0jp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xze-b2-rAE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="AYT-Lx-paP"/>
                     <toolbarItems/>
