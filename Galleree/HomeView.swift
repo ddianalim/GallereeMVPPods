@@ -10,7 +10,10 @@ import UIKit
 
 class HomeViewController : UIViewController {
     
+    var photoTakingHelper: PhotoTakingHelper?
+    
     @IBAction func unwindToListNotesViewController(segue: UIStoryboardSegue) {
     }
+    
     
 }
